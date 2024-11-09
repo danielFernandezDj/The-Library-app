@@ -24,7 +24,7 @@ function App() {
       <Router>
         {/* <NavBar /> */}
         <ImgView />
-        <section>a
+        <section>
           <Routes>
             <Route></Route> {/* Home */}
             <Route></Route> {/* LogIn */}

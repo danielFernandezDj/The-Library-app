@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 // C O M P O N E N T S
-import { Login } from './components/Login';
-import { DownloadBtn } from './components/DownloadBtn';
+import Login from './components/Login';
+import DownloadBtn from './components/DownloadBtn';
 
 // N E X T _ U I
 import { Image } from "@nextui-org/react";
@@ -31,7 +31,7 @@ function App() {
 
           <Image
             isBlurred
-            src="assets/image-background.avif"
+            src="src/assets/image-background.avif"
             alt="Rock style image from Unsplash"
             className="w-full h-auto"
           />

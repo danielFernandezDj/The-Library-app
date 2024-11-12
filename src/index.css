@@ -6,7 +6,7 @@
   .panel-top {
     @apply z-10 flex justify-between content-center fixed w-full top-0 pt-16 px-8
   }
-  /* bg-amber-200 */
+  /* bg-amber-200  asfasf*/
   .panel-center {
     @apply z-0 lg:w-10/12 w-8/12
   }

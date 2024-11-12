@@ -4,14 +4,36 @@
 
 @layer components {
   .panel-top {
-    @apply z-10 flex justify-between content-center fixed w-full top-0 pt-16 px-8
+    @apply z-10 flex justify-between content-center absolute w-full pt-4 px-10
   }
-  /* bg-amber-200  asfasf*/
-  .panel-center {
-    @apply z-0 lg:w-10/12 w-8/12
+
+  /* bg-indigo-500 opacity-20*/
+  .panel-bg-img {
+    @apply z-0 lg:px-12 lg:w-90p w-4/6 flex justify-center items-stretch
   }
 
   .panel-bottom {
-    @apply z-10 flex justify-center content-start gap-4 fixed w-full bottom-0 py-16
+    @apply z-10 flex justify-between lg:justify-center self-end gap-4 absolute w-full pb-4 px-10
+  }
+
+  /* Disable scrolling */
+  body {
+    @apply overflow-hidden;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+/* Ensure the app is always in Horizontal view */
+@media only screen and (orientation: portrait) {
+  body {
+    transform: rotate(90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
   }
 }

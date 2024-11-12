@@ -1,5 +1,7 @@
 import React from "react";
 import { Button, } from "@nextui-org/button";
+import { ImageDown } from 'lucide-react';
+
 
 export default function DownloadBtn() {
   const handleDownload = async () => {
@@ -30,11 +32,14 @@ export default function DownloadBtn() {
   return (
     <>
       <Button
+        isIconOnly
+        variant="shadow"
         color="primary"
+        radius="full"
         onClick={handleDownload}
-        className="download-Button"
+        className="w-14 h-20"
       >
-        Download Image
+        <ImageDown />
       </Button>
     </>
   )

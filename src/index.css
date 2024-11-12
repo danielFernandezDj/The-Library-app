@@ -7,7 +7,6 @@
     @apply z-10 flex justify-between content-center absolute w-full pt-4 px-10
   }
 
-  /* bg-indigo-500 opacity-20*/
   .panel-bg-img {
     @apply z-0 lg:px-12 lg:w-90p w-4/6 flex justify-center items-stretch
   }

@@ -11,8 +11,11 @@ export default {
   // important: "#root",
   theme: {
     extend: {
+      width: {
+        '90p': '90%', // Custom utility for 88% width
+      },
     },
   },
   darkMode: 'media',
-  plugins: [nextui()]
+  plugins: [nextui()],
 }

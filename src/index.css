@@ -4,15 +4,15 @@
 
 @layer components {
   .panel-top {
-    @apply z-10 flex justify-between content-center absolute w-full pt-4 px-10
+    @apply z-10 flex justify-between content-center absolute lg:w-90p w-full pt-4 lg:px-16 px-4
   }
 
   .panel-bg-img {
-    @apply z-0 lg:px-12 lg:w-90p w-4/6 flex justify-center items-stretch
+    @apply z-0 lg:px-12 lg:w-90p h-full flex justify-center items-stretch
   }
 
   .panel-bottom {
-    @apply z-10 flex justify-between lg:justify-center self-end gap-4 absolute w-full pb-4 px-10
+    @apply z-10 flex justify-center self-end gap-6 absolute w-full pb-6 px-10
   }
 
   /* Disable scrolling */
@@ -24,7 +24,7 @@
 }
 
 /* Ensure the app is always in Horizontal view */
-@media only screen and (orientation: portrait) {
+/* @media only screen and (orientation: portrait) {
   body {
     transform: rotate(90deg);
     transform-origin: left top;
@@ -35,4 +35,4 @@
     top: 100%;
     left: 0;
   }
-}
+} */

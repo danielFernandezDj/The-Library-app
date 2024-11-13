@@ -8,8 +8,8 @@ export default function BackgroundImage() {
     <Image
       isBlurred
       src="src/assets/image-background.avif"
-      alt="Rock style image from Unsplash"
-      className="z-0 w-full h-auto"
+      alt="Rock image from Unsplash"
+      className="z-0 lg:w-full lg:h-auto" // overflow-x-auto
     />
   );
 }

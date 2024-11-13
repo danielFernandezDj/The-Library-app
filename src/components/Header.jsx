@@ -1,12 +1,15 @@
 import React from "react";
-import { Button, } from "@nextui-org/button";
-import { ImageDown } from 'lucide-react';
 
+// Next UI
+import { Button } from "@nextui-org/react";
 
-export default function DownloadBtn() {
+// Icons
+import { ImageDown, UserRoundPen } from 'lucide-react';
+
+export default function Header() {
+  // Handle Download the Fetch Image
   const handleDownload = async () => {
     const fileUrl = "https://example.com/path-to-your-image.jpg"; // External file URL
-
     try {
       // Fetch the file from the URL
       const response = await fetch(fileUrl);
@@ -30,7 +33,23 @@ export default function DownloadBtn() {
   };
 
   return (
-    <>
+    <div className="panel-top">
+      <div className='flex flex-col items-center gap-2'>
+        <Button
+          isIconOnly
+          variant="shadow"
+          color="primary"
+          radius="full"
+          className="w-14 h-20"
+        >
+          <UserRoundPen />
+        </Button>
+        <a className='text-white' href=''>Login</a>
+      </div>
+
+      <p className="text-xl">Title</p>
+
+      {/* Download Button */}
       <Button
         isIconOnly
         variant="shadow"
@@ -41,6 +60,6 @@ export default function DownloadBtn() {
       >
         <ImageDown />
       </Button>
-    </>
-  )
+    </div>
+  );
 }

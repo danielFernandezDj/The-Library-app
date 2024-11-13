@@ -33,7 +33,7 @@ export default function Header() {
   };
 
   return (
-    <div className="panel-top">
+    <div className="header-panel">
       <div className='flex flex-col items-center gap-2'>
         <Button
           isIconOnly

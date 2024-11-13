@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 @layer components {
-  .panel-top {
+  .header-panel {
     @apply z-10 flex justify-between content-center absolute lg:w-90p w-full pt-4 lg:px-16 px-4
   }
 
-  .panel-bg-img {
-    @apply z-0 lg:px-12 lg:w-90p h-full flex justify-center items-stretch
+  .principal-panel {
+    @apply z-0 lg:px-12 lg:w-90p lg:h-auto h-full flex justify-center items-stretch
   }
 
-  .panel-bottom {
+  .footer-panel {
     @apply z-10 flex justify-center self-end gap-6 absolute w-full pb-6 px-10
   }
 

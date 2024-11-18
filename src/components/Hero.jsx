@@ -33,24 +33,12 @@ export default function Header() {
   };
 
   return (
-    <div className="header-panel">
-      <div className='flex flex-col items-center gap-2'>
-        <Button
-          isIconOnly
-          variant="shadow"
-          color="primary"
-          radius="full"
-          className="w-14 h-20"
-        >
-          <UserRoundPen />
-        </Button>
-        <a className='text-white' href=''>Login</a>
-      </div>
+    <>
+      <div className="header-panel">
+        
 
-      <p className="text-xl">Title</p>
-
-      {/* Download Button */}
-      <Button
+        {/* Download Button */}
+        {/* <Button
         isIconOnly
         variant="shadow"
         color="primary"
@@ -59,7 +47,8 @@ export default function Header() {
         className="w-14 h-20"
       >
         <ImageDown />
-      </Button>
-    </div>
+      </Button> */}
+      </div>
+    </>
   );
 }

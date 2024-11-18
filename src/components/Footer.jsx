@@ -8,13 +8,10 @@ import { CircleArrowLeft, CircleArrowRight } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <div className="footer-panel">
-      <Button isIconOnly color="primary" variant="shadow" radius="full" className="w-14 h-14">
-        <CircleArrowLeft />
-      </Button>
-      <Button isIconOnly color="primary" variant="shadow" radius="full" className="w-14 h-14">
-        <CircleArrowRight />
-      </Button>
-    </div>
+    <>
+      <div className="footer-panel">
+
+      </div>
+    </>
   );
 }

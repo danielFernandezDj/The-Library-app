@@ -1,19 +1,18 @@
 import React, { useState, useEffect } from 'react';
 
 // Components
-import Header from './components/Header';
-import BackgroundImage from './components/BackgroundImage';
+import Header from './components/Hero';
+
 import Footer from './components/Footer';
 
 // Main App
 function App() {
   return (
     <>
-      <main className="flex justify-center items-center h-dvh bg-current">
-        <section className='principal-panel'>
+      <main >
+        <section >
           <Header />
-          <BackgroundImage />
-          <Footer />
+          {/* <Footer /> */}
         </section>
       </main>
     </>

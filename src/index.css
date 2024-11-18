@@ -4,14 +4,14 @@
 
 @layer components {
   .header-panel {
-    @apply
+    @apply z-0
   }
 
   .body-panel {
-    @apply
+    @apply z-0
   }
 
   .footer-panel {
-    @apply
+    @apply z-0
   }
 }

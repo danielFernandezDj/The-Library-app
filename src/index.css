@@ -3,15 +3,19 @@
 @tailwind utilities;
 
 @layer components {
-  .header-panel {
-    @apply z-0
+  .navbar-style {
+    @apply  max-w-screen-md mt-5 mx-auto rounded-full
   }
 
-  .body-panel {
+  .hero-panel {
+    @apply absolute top-0 w-full h-[39rem]
+  }
+
+  /* .body-panel {
     @apply z-0
   }
 
   .footer-panel {
     @apply z-0
-  }
+  } */
 }

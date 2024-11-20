@@ -12,6 +12,8 @@ function App() {
     <>
       <main >
         <NavBar />
+        <Hero />
+        <Body />
       </main>
     </>
   )

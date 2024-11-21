@@ -26,7 +26,6 @@ export default function NavBar() {
   ];
 
   return (
-    // className = " border-dashed border-b-2 border-red-300 "
     <Navbar onMenuOpenChange={setIsMenuOpen}
       className="bg-transparent navbar-custom-dashed-border"
       isBlurred={isBlurred}

@@ -35,9 +35,12 @@ export default function Header() {
 
   return (
     <>
-      <div className="hero-panel" >
+      <section className="hero-panel" >
+        <div>
 
-      </div>
+        </div>
+        <div className="absolute top-0 z-0 w-full h-full opacity-25 bg-repeat bg-[length:368px_368px] bg-[url('src/assets/images/patter-1.png')]"></div>
+      </section>
     </>
   );
 }

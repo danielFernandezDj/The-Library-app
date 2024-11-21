@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 @layer components {
+  .main-app {
+    @apply w-full h-auto 
+  }
+
   .hero-panel {
-    @apply w-full h-[30rem]
+    @apply z-10 relative w-full h-[30rem]
   }
 
-  /* .body-panel {
-    @apply z-0
+  .body-panel {
+    @apply z-10 relative w-full h-auto
   }
-
-  .footer-panel {
-    @apply z-0
-  } */
 }
 
 .navbar-custom-dashed-border {

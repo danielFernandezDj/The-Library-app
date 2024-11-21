@@ -9,19 +9,13 @@ import Body from './components/Body'
 function App() {
   return (
     <>
-      <main>
-
-
+      <main className='main-app'>
         <NavBar />
         <Hero />
-        {/* <Body /> */}
-        <div className="absolute top-0 bg-repeat w-full h-full bg-[length:368px_368px] opacity-25 bg-[url('src/assets/images/patter-1.png')]">
-        </div>
+        <Body />
       </main>
     </>
   )
 }
 
 export default App
-
-// backgroundSize: '368px 368px'

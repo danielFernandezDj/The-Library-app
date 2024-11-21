@@ -45,7 +45,7 @@ export default function NavBar() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link href="#" aria-current="page">
             Explore
           </Link>
         </NavbarItem>
@@ -55,7 +55,7 @@ export default function NavBar() {
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="#" aria-current="page">
+          <Link color="foreground" href="#">
             About
           </Link>
         </NavbarItem>

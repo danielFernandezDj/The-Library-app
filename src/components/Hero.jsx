@@ -9,7 +9,7 @@ import { ImageDown, UserRoundPen } from 'lucide-react';
 export default function Header() {
 
   // Handle Download the Fetch Image
-  // const handleDownload = async () => {
+  // const handleDownload = async () => {a
   //   const fileUrl = "https://example.com/path-to-your-image.jpg"; // External file URL
   //   try {
   //     // Fetch the file from the URL
@@ -35,13 +35,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="hero-panel">
-
-
-          <img src="src/assets/images/hero-img.jpg" alt="The Hero BackGround Image."
-            className="object-cover w-full h-[39rem]"
-          />
-
+      <div className="hero-panel" >
 
       </div>
     </>

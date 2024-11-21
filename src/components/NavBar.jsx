@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button } from "@nextui-org/react";
 import { LampWallUp } from 'lucide-react';
 
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isBlurred, setIsBlurred] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsBlurred(window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const menuItems = [
     "Home",
@@ -14,9 +26,11 @@ export default function NavBar() {
   ];
 
   return (
+    // className = " border-dashed border-b-2 border-red-300 "
     <Navbar onMenuOpenChange={setIsMenuOpen}
-      className="navbar-style top-5"
-      position="sticky"
+      className="bg-transparent navbar-custom-dashed-border"
+      isBlurred={isBlurred}
+      height={'3.5rem'}
     >
       <NavbarContent>
         <NavbarMenuToggle
@@ -32,7 +46,7 @@ export default function NavBar() {
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
           <Link color="foreground" href="#">
-            Home
+            Explore
           </Link>
         </NavbarItem>
         <NavbarItem>
@@ -42,12 +56,12 @@ export default function NavBar() {
         </NavbarItem>
         <NavbarItem isActive>
           <Link href="#" aria-current="page">
-            Copyright
+            About
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="#">
-            About
+            License
           </Link>
         </NavbarItem>
       </NavbarContent>

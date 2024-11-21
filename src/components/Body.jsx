@@ -5,17 +5,15 @@ export default function Body() {
 
   return (
     <>
-      <div>
-        <img src="src/assets/images/hero-img.jpg" alt="Hero Img" />
-        <img src="src/assets/images/hero-img.jpg" alt="Hero Img" />
-        <img src="src/assets/images/hero-img.jpg" alt="Hero Img" />
-        <img src="src/assets/images/hero-img.jpg" alt="Hero Img" />
-        <img src="src/assets/images/hero-img.jpg" alt="Hero Img" />
-        <img src="src/assets/images/hero-img.jpg" alt="Hero Img" />
-        <img src="src/assets/images/hero-img.jpg" alt="Hero Img" />
-        <img src="src/assets/images/hero-img.jpg" alt="Hero Img" />
-        <img src="src/assets/images/hero-img.jpg" alt="Hero Img" />
-        <img src="src/assets/images/hero-img.jpg" alt="Hero Img" />
+      <div className="p-5">
+        <img src="src/assets/images/hero-img.jpg" alt="Hero Img" className="w-1/4"/>
+        <img src="src/assets/images/hero-img.jpg" alt="Hero Img" className="w-1/4"/>
+        <img src="src/assets/images/hero-img.jpg" alt="Hero Img" className="w-1/4"/>
+        <img src="src/assets/images/hero-img.jpg" alt="Hero Img" className="w-1/4"/>
+        <img src="src/assets/images/hero-img.jpg" alt="Hero Img" className="w-1/4"/>
+        <img src="src/assets/images/hero-img.jpg" alt="Hero Img" className="w-1/4"/>
+        <img src="src/assets/images/hero-img.jpg" alt="Hero Img" className="w-1/4"/>
+
       </div>
     </>
   )

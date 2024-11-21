@@ -33,7 +33,7 @@ export default function Body() {
           Im here bajsfhoiajstvmlaksdjl bajsfhoiajstvmlaksdjl bajsfhoiajstvmlaksdjl bajsfhoiajstvmlaksdjl bajsfhoiajstvmlaksdjl
         </p>
 
-        <div className="absolute top-0 z-0 w-full h-full opacity-25 bg-repeat bg-[length:368px_368px] bg-[url('src/assets/images/patter-1.png')]"></div>
+        {/* <div className="absolute top-0 z-0 w-full h-full opacity-25 bg-repeat bg-[length:368px_368px] bg-[url('src/assets/images/patter-1.png')]"></div> */}
       </div>
     </>
   )

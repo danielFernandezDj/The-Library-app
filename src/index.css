@@ -36,7 +36,8 @@
   }
 }
 
-body, h3 {
+body,
+h3 {
   font-family: 'Inter-Regular', sans-serif;
 }
 
@@ -46,6 +47,8 @@ h1 {
 
 h2 {
   font-family: 'Inter-Medium', sans-serif;
+  letter-spacing: 0.025em;
+  font-size: 1.25rem;
 }
 
 .font-roboto {
@@ -58,11 +61,15 @@ h2 {
   }
 
   .hero-panel {
-    @apply z-10 relative w-full h-[30rem]
+    @apply w-full h-[30rem]
   }
 
   .body-panel {
-    @apply z-10 relative w-full h-auto
+    @apply w-full h-auto
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-orange-color from-20% to-magenta-color to-80% bg-clip-text text-transparent
   }
 }
 

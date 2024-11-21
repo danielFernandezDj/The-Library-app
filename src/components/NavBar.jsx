@@ -35,7 +35,7 @@ export default function NavBar() {
         />
         <NavbarBrand>
           <img width={40} src="src/assets/images/icons.svg" alt="Artistic Echoes Logo" />
-          <p className="ml-2 text-xl tracking-wider font-roboto bg-gradient-to-r from-orange-color to-magenta-color bg-clip-text text-transparent">
+          <p className="ml-2 text-xl tracking-wider font-roboto text-gradient">
             Artistic Echoes
           </p>
         </NavbarBrand>

@@ -2,16 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: 'Roboto-Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(src/assets/fonts/Roboto_Slab) format('wght');
+  }
+
+  @font-face {
+    font-family: 'Inter-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(src/assets/fonts/Inter) format('wght');
+  }
+
+  @font-face {
+    font-family: 'Inter-Medium';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(src/assets/fonts/Inter) format('wght');
+  }
+
+  @font-face {
+    font-family: 'Inter-Semibold';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(src/assets/fonts/Inter) format('wght');
+  }
+}
+
+body, h3 {
+  font-family: 'Inter-Regular', sans-serif;
+}
+
+h1 {
+  font-family: 'Inter-Semibold', sans-serif;
+}
+
+h2 {
+  font-family: 'Inter-Medium', sans-serif;
+}
+
+.font-roboto {
+  font-family: 'Roboto-Slab', serif;
+}
+
 @layer components {
-  .header-panel {
-    @apply z-0
+  .main-app {
+    @apply w-full h-auto
+  }
+
+  .hero-panel {
+    @apply z-10 relative w-full h-[30rem]
   }
 
   .body-panel {
-    @apply z-0
+    @apply z-10 relative w-full h-auto
   }
+}
 
-  .footer-panel {
-    @apply z-0
-  }
+.navbar-custom-dashed-border {
+  border-bottom: 1px dashed rgb(219, 74, 22);
+  border-image: repeating-linear-gradient(to right, #D45B2B 0%, #D45B2B 6px, transparent 0px, transparent 15px, black 0px, black 6px, transparent 0px, transparent 8px) 1 stretch;
 }

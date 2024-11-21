@@ -1,64 +1,87 @@
-import React from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button} from "@nextui-org/react";
-import { LampWallUp } from 'lucide-react';
-
+import React, { useState, useEffect } from "react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button } from "@nextui-org/react";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isBlurred, setIsBlurred] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsBlurred(window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
+    "Home",
+    "Roadmap",
+    "Copyright",
+    "About",
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
+    <Navbar onMenuOpenChange={setIsMenuOpen}
+      className="bg-transparent navbar-custom-dashed-border"
+      isBlurred={isBlurred}
+    >
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
         />
         <NavbarBrand>
-          <LampWallUp />
-          <p className="font-bold text-inherit">ACME</p>
+          <img width={40} src="src/assets/images/icons.svg" alt="Artistic Echoes Logo" />
+          <p className="ml-2 text-xl tracking-wider font-roboto bg-gradient-to-r from-orange-color to-magenta-color bg-clip-text text-transparent">
+            Artistic Echoes
+          </p>
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden sm:flex font-roboto gap-0 tracking-wider" justify="end">
         <NavbarItem>
-          <Link color="foreground" href="#">
-            Features
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            Customers
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
-          </Link>
-        </NavbarItem>
-      </NavbarContent>
-      <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
+          <Button href="#" variant="light" radius="sm" className="text-black-color h-8 text-base">
+            Explore
           </Button>
         </NavbarItem>
+        <NavbarItem>
+          <Button href="#" variant="light" radius="sm" className="text-black-color h-8 text-base">
+            Roadmap
+          </Button>
+        </NavbarItem>
+        <NavbarItem>
+          <Button href="#" variant="light" radius="sm" className="text-black-color h-8 text-base">
+            About
+          </Button>
+        </NavbarItem>
+        <NavbarItem>
+          <Button href="#" variant="light" radius="sm" className="text-black-color h-8 text-base">
+            License
+          </Button>
+        </NavbarItem>
+
+        <NavbarContent justify="end" className="ml-10">
+          {/* <NavbarItem className="hidden lg:flex">
+          <Link href="#">Login</Link>
+        </NavbarItem> */}
+          <NavbarItem>
+            <Button
+              className="Inter-Medium text-xl w-40 h-10 bg-magenta-color text-white tracking-wider"
+              as={Link}
+              radius="sm"
+              href="#"
+              color="secondary"
+              variant="shadow"
+            >
+              Donation
+            </Button>
+          </NavbarItem>
+        </NavbarContent>
       </NavbarContent>
+
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>

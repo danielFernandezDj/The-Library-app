@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button } from "@nextui-org/react";
-import { LampWallUp } from 'lucide-react';
-
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -29,7 +27,6 @@ export default function NavBar() {
     <Navbar onMenuOpenChange={setIsMenuOpen}
       className="bg-transparent navbar-custom-dashed-border"
       isBlurred={isBlurred}
-      height={'3.5rem'}
     >
       <NavbarContent>
         <NavbarMenuToggle
@@ -37,42 +34,52 @@ export default function NavBar() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <LampWallUp />
-          <p className="ml-3 font-bold text-inherit">Wall.Be</p>
+          <img width={40} src="src/assets/images/icons.svg" alt="Artistic Echoes Logo" />
+          <p className="ml-2 text-xl tracking-wider font-roboto bg-gradient-to-r from-orange-color to-magenta-color bg-clip-text text-transparent">
+            Artistic Echoes
+          </p>
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden sm:flex font-roboto gap-0 tracking-wider" justify="end">
         <NavbarItem>
-          <Link href="#" aria-current="page">
+          <Button href="#" variant="light" radius="sm" className="text-black-color h-8 text-base">
             Explore
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Roadmap
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link color="foreground" href="#">
-            About
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            License
-          </Link>
-        </NavbarItem>
-      </NavbarContent>
-      <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Donation
           </Button>
         </NavbarItem>
+        <NavbarItem>
+          <Button href="#" variant="light" radius="sm" className="text-black-color h-8 text-base">
+            Roadmap
+          </Button>
+        </NavbarItem>
+        <NavbarItem>
+          <Button href="#" variant="light" radius="sm" className="text-black-color h-8 text-base">
+            About
+          </Button>
+        </NavbarItem>
+        <NavbarItem>
+          <Button href="#" variant="light" radius="sm" className="text-black-color h-8 text-base">
+            License
+          </Button>
+        </NavbarItem>
+
+        <NavbarContent justify="end" className="ml-10">
+          {/* <NavbarItem className="hidden lg:flex">
+          <Link href="#">Login</Link>
+        </NavbarItem> */}
+          <NavbarItem>
+            <Button
+              className="Inter-Medium text-xl w-40 h-10 bg-magenta-color text-white tracking-wider"
+              as={Link}
+              radius="sm"
+              href="#"
+              color="secondary"
+              variant="shadow"
+            >
+              Donation
+            </Button>
+          </NavbarItem>
+        </NavbarContent>
       </NavbarContent>
 
       <NavbarMenu>

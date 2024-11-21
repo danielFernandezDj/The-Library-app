@@ -11,6 +11,11 @@ export default {
   // important: "#root",
   theme: {
     extend: {
+      colors: {
+        'orange-color': '#D45B2B',
+        'magenta-color': '#6625BF',
+        'black-color': '#1E1E1E',
+      },
     },
   },
   darkMode: 'media',

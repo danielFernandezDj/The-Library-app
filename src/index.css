@@ -4,7 +4,7 @@
 
 @layer base {
   @font-face {
-    font-family: 'RobotoSlab';
+    font-family: 'Roboto-Slab';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -12,7 +12,7 @@
   }
 
   @font-face {
-    font-family: 'InterRegular';
+    font-family: 'Inter-Regular';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -20,7 +20,7 @@
   }
 
   @font-face {
-    font-family: 'InterMedium';
+    font-family: 'Inter-Medium';
     font-style: normal;
     font-weight: 600;
     font-display: swap;
@@ -28,7 +28,7 @@
   }
 
   @font-face {
-    font-family: 'InterSemibold';
+    font-family: 'Inter-Semibold';
     font-style: normal;
     font-weight: 800;
     font-display: swap;
@@ -37,20 +37,19 @@
 }
 
 body, h3 {
-  font-family: 'InterRegular', sans-serif;
+  font-family: 'Inter-Regular', sans-serif;
 }
 
 h1 {
-  font-family: 'InterSemibold', sans-serif;
+  font-family: 'Inter-Semibold', sans-serif;
 }
 
 h2 {
-  font-family: 'InterMedium', sans-serif;
+  font-family: 'Inter-Medium', sans-serif;
 }
 
-.roboto {
-  font-family: 'RobotoSlab', serif;
-
+.font-roboto {
+  font-family: 'Roboto-Slab', serif;
 }
 
 @layer components {

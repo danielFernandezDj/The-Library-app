@@ -37,7 +37,7 @@ export default function Header() {
     <>
       <section className="hero-panel" >
         <div>
-          
+          <h1>Free For all!</h1>
         </div>
         <div className="absolute top-0 z-0 w-full h-full opacity-25 bg-repeat bg-[length:368px_368px] bg-[url('src/assets/images/patter-1.png')]"></div>
       </section>

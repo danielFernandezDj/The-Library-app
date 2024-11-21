@@ -24,23 +24,28 @@ export default function NavBar() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}
+    <Navbar
+      onMenuOpenChange={setIsMenuOpen}
       className="bg-transparent navbar-custom-dashed-border"
       isBlurred={isBlurred}
     >
+      {/* Brand Centered */}
       <NavbarContent>
-        <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
-        />
         <NavbarBrand>
           <img width={40} src="src/assets/images/icons.svg" alt="Artistic Echoes Logo" />
           <p className="ml-2 text-xl tracking-wider font-roboto text-gradient">
             Artistic Echoes
           </p>
         </NavbarBrand>
+
+        {/* Hamburger to the Right */}
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          className="sm:hidden"
+        />
       </NavbarContent>
 
+      {/* Desktop Navigation */}
       <NavbarContent className="hidden sm:flex font-roboto gap-0 tracking-wider" justify="end">
         <NavbarItem>
           <Button href="#" variant="light" radius="sm" className="text-black-color h-8 text-base">
@@ -63,10 +68,11 @@ export default function NavBar() {
           </Button>
         </NavbarItem>
 
+        {/* Right-aligned Content */}
         <NavbarContent justify="end" className="ml-10">
           {/* <NavbarItem className="hidden lg:flex">
           <Link href="#">Login</Link>
-        </NavbarItem> */}
+          </NavbarItem> */}
           <NavbarItem>
             <Button
               className="Inter-Medium text-xl w-40 h-10 bg-magenta-color text-white tracking-wider"
@@ -82,7 +88,8 @@ export default function NavBar() {
         </NavbarContent>
       </NavbarContent>
 
-      <NavbarMenu>
+      {/* Hamburger Menu  */}
+      <NavbarMenu className="bg-white/30 backdrop-blur-lg">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link

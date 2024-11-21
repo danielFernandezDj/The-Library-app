@@ -61,7 +61,7 @@ h2 {
   }
 
   .hero-panel {
-    @apply w-full h-[30rem]
+    @apply w-full h-[30rem] py-10
   }
 
   .body-panel {

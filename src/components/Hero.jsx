@@ -35,13 +35,11 @@ export default function Header() {
 
   return (
     <>
-      <section className="hero-panel" >
-        <div className="text-center py-5">
-          <h1 className="font-bold text-[min(15vw,280px)] text-gradient">Free For all!</h1>
-          <h2 className="font-medium text-[min(5vw,60px)] text-gradient">
+      <section className="hero-panel text-center" >
+          <h1 className="font-bold text-[min(15vw,280px)] text-gradient leading-none">Free For all!</h1>
+          <h2 className="font-medium lg:text-[min(5vw,55px)] text-gradient m-auto max-w-screen-xl">
             Download more than 470,000 Pieces <br /> of human history for free!
           </h2>
-        </div>
       </section>
     </>
   );

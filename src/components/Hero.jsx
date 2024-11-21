@@ -35,11 +35,11 @@ export default function Header() {
 
   return (
     <>
-      <section className="hero-panel" >
-        <div>
-          
-        </div>
-        <div className="absolute top-0 z-0 w-full h-full opacity-25 bg-repeat bg-[length:368px_368px] bg-[url('src/assets/images/patter-1.png')]"></div>
+      <section className="hero-panel text-center" >
+          <h1 className="font-bold text-[min(15vw,280px)] text-gradient leading-none">Free For all!</h1>
+          <h2 className="font-medium lg:text-[min(5vw,55px)] text-gradient m-auto max-w-screen-xl">
+            Download more than 470,000 Pieces <br /> of human history for free!
+          </h2>
       </section>
     </>
   );

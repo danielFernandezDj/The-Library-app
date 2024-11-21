@@ -2,9 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: 'RobotoSlab';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(src/assets/fonts/Roboto_Slab) format('wght');
+  }
+
+  @font-face {
+    font-family: 'InterRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(src/assets/fonts/Inter) format('wght');
+  }
+
+  @font-face {
+    font-family: 'InterMedium';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(src/assets/fonts/Inter) format('wght');
+  }
+
+  @font-face {
+    font-family: 'InterSemibold';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(src/assets/fonts/Inter) format('wght');
+  }
+}
+
+body, h3 {
+  font-family: 'InterRegular', sans-serif;
+}
+
+h1 {
+  font-family: 'InterSemibold', sans-serif;
+}
+
+h2 {
+  font-family: 'InterMedium', sans-serif;
+}
+
+.roboto {
+  font-family: 'RobotoSlab', serif;
+
+}
+
 @layer components {
   .main-app {
-    @apply w-full h-auto 
+    @apply w-full h-auto
   }
 
   .hero-panel {

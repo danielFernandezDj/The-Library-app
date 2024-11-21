@@ -8,7 +8,7 @@ import Body from './components/Body'
 // Main App
 function App() {
   return (
-    <>
+    <> 
       <main className='main-app'>
         <NavBar />
         <Hero />

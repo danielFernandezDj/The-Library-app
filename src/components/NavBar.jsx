@@ -25,9 +25,8 @@ export default function NavBar() {
 
   return (
     <Navbar
+      className={`bg-transparent navbar-custom-dashed-border  ${isBlurred ? ' bg-white/30 backdrop-blur-lg ' : ''}`}
       onMenuOpenChange={setIsMenuOpen}
-      className="bg-transparent navbar-custom-dashed-border"
-      isBlurred={isBlurred}
     >
       {/* Brand Centered */}
       <NavbarContent>
